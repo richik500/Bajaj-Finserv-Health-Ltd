@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="flightpath.css" />
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry"></script>
+    <script src="flightpath.js"></script>
+</head>
+<body>
+    <div id="mapCanvas" class="map"></div>
+    <script type="text/javascript">loadMap();</script>
+    
+    <div class="controls">
+        <select id="s_from" onChange="go();">
+            <option value="france">France</option>
+
+        </select> to
+        <select id="s_to" onChange="go();">
+            <option value="ambala">Ambala</option>
+
+        </select>
+        <button type="button" onclick="go();">Rafale Flight Path</button>
+    </div>
+
+</body>
+</html>
